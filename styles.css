@@ -1,0 +1,166 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 70px 20px;
+    margin-top: 50px;
+
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   }
+   
+   /* Modal Content/Box */
+   .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+   }
+   
+   /* The Close Button */
+   .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+   }
+   
+   .close:hover,
+   .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+   }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.product-item{
+    margin: 100px;
+    
+    }
+
+
+.product-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+.footer .footer-top {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-top .footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-top .footer-links a {
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.footer .footer-top .footer-links a:hover {
+    color: #007bff;
+}
+
+.footer .footer-bottom {
+    text-align: center;
+}
+
+.footer .footer-bottom p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.footer .footer-bottom p a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer .footer-bottom p a:hover {
+    color: #007bff;
+}
